@@ -1,1 +1,1 @@
-source ../plugin/list.vim
+source ../plugin/lists.vim
