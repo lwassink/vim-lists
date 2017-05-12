@@ -12,7 +12,7 @@ function! s:Leader()
 
   if prev_line =~# '\v^\s*--\s*[^ ]'
     return '-- '
-  if prev_line =~# '\v^\s*\*\s*[^ ]'
+  elseif prev_line =~# '\v^\s*\*\s*[^ ]'
     return '* '
   elseif prev_line =~# '\v^\s*\d+[.\)]\s*[^ ]'
     let number = matchstr(prev_line, '\v\d+')
