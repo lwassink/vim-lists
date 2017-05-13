@@ -5,7 +5,8 @@ if exists("b:lists_loaded")
 endif
 let b:lists_loaded = 1
 
-source ~/.vim/plugin/utilities.vim
+let s:path = expand('<sfile>:p:h')
+exec "source " . s:path . "/utilities.vim"
 
 function! s:Leader()
   let prev_line = UtilitiesPreviousLine()
@@ -19,7 +20,7 @@ function! s:Leader()
     let number += 1
     let symbol = matchstr(prev_line, '\v[\.\)]')
     return string(number) . symbol . ' '
-  elseif prev_line =~# '\v^\s*--\s*$' || prev_line =~# '\v^\s*\d+[.\)]\s*$'
+  elseif prev_line =~# '\v^\s*(--|\*)\s*$' || prev_line =~# '\v^\s*\d+[.\)]\s*$'
     normal! kdd
     return ''
   else
