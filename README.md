@@ -6,7 +6,7 @@ For example, if you're at the end of the following line
 ```
 * This is a point
 ```
-And you hit enter, you willl see this
+and you hit enter, you willl see this
 ```txt
 * This is a point
 * 
