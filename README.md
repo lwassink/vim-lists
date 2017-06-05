@@ -30,7 +30,7 @@ cd ~/.vim/bundle
 git clone git@github.com:lwassink/vim-lists.git
 ```
 
-If you use Vundle, add the following line to you're `.vimrc` file:
+If you use Vundle, add the following line to your `.vimrc` file:
 ```vim
 Plugin 'https://github.com/lwassink/vim-lists.git'
 ```
